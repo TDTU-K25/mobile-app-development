@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Student Management</string>
+    <string name="preference_login_key">com.example.ex1.PREFERENCE_LOGIN_KEY</string>
+    <string name="saved_account_uid_key">accountUID</string>
+    <string name="saved_role_key">role</string>
+</resources>

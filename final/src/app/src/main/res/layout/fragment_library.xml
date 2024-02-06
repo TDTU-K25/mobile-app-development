@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragment.LibraryFragment">
+
+        <TextView
+            android:id="@+id/tv_library"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="32dp"
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp"
+            android:text="Library"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"></TextView>
+
+        <!--        Video Watched-->
+        <FrameLayout
+            android:id="@+id/fragment_container_video_watched"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintTop_toBottomOf="@+id/tv_video_watched"></FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_video_watched"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:text="Video Đã Xem"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_library"></TextView>
+
+        <Button
+            android:id="@+id/btn_video_watched"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="Xem tất cả"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_video_watched"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_video_watched"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <!--        Playist-->
+
+        <TextView
+            android:id="@+id/tv_video_playlist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="Danh sách Playlist"
+
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/tv_video_watched"
+            app:layout_constraintTop_toBottomOf="@+id/fragment_container_video_liked"></TextView>
+
+        <Button
+            android:id="@+id/btn_playlist"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xem"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_video_playlist"
+            app:layout_constraintEnd_toEndOf="@+id/btn_video_watched"
+            app:layout_constraintStart_toStartOf="@+id/btn_video_watched"
+            app:layout_constraintTop_toTopOf="@+id/tv_video_playlist"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+        <!--        Video Liked-->
+        <FrameLayout
+            android:id="@+id/fragment_container_video_liked"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintTop_toBottomOf="@+id/tv_video_liked"
+            tools:layout_editor_absoluteX="4dp"></FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_video_liked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="Video Đã Thích"
+
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/tv_video_watched"
+            app:layout_constraintTop_toBottomOf="@+id/fragment_container_video_watched"></TextView>
+
+        <Button
+            android:id="@+id/btn_video_liked"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xem tất cả"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_video_liked"
+            app:layout_constraintEnd_toEndOf="@+id/btn_video_watched"
+            app:layout_constraintStart_toStartOf="@+id/btn_video_watched"
+            app:layout_constraintTop_toTopOf="@+id/tv_video_liked"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Danh sách kênh đã đăng ký"
+
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tv_video_playlist"
+            app:layout_constraintTop_toTopOf="@+id/btn_subscription"></TextView>
+
+        <Button
+            android:id="@+id/btn_subscription"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="52dp"
+            android:text="Xem tất cả"
+            app:layout_constraintStart_toStartOf="@+id/btn_playlist"
+            app:layout_constraintTop_toBottomOf="@+id/btn_playlist" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

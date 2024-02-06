@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/add_event"
+        android:icon="@drawable/add_fill0_wght400_grad0_opsz24"
+        android:title="Add event"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/sw_enabled_or_disabled_event"
+        android:title=""
+        app:actionViewClass="androidx.appcompat.widget.SwitchCompat"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/remove_all"
+        android:title="Remove all" />
+
+    <item
+        android:id="@+id/about"
+        android:title="About" />
+</menu>

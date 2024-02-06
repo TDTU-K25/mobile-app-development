@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.ChannelFragment">
+
+    <include
+        android:id="@+id/header_channel"
+        layout="@layout/layout_header_channel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_avatar_channel"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/account_circle_fill0_wght400_grad0_opsz24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header_channel" />
+
+    <TextView
+        android:id="@+id/tv_channel_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Alex Lee"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/tv_channel_id"
+        app:layout_constraintStart_toEndOf="@id/iv_avatar_channel"
+        app:layout_constraintTop_toTopOf="@id/iv_avatar_channel" />
+
+    <TextView
+        android:id="@+id/tv_channel_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="123123"
+        app:layout_constraintBottom_toBottomOf="@id/iv_avatar_channel"
+        app:layout_constraintStart_toStartOf="@id/tv_channel_name"
+        app:layout_constraintTop_toBottomOf="@id/tv_channel_name" />
+
+    <LinearLayout
+        android:id="@+id/ll_manage_channel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_avatar_channel">
+
+        <Button
+            android:id="@+id/btn_manage_videos"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:text="Manage videos" />
+
+        <ImageView
+            android:id="@+id/iv_edit_channel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/edit_fill0_wght400_grad0_opsz24" />
+
+    </LinearLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout_channel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_manage_channel" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager_channel"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tab_layout_channel" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

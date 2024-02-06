@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Receiver</string>
+    <string name="action_send_msg">com.example.ex2.action_send_msg</string>
+</resources>

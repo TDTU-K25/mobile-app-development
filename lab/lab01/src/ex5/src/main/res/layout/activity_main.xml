@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="List of Checkboxes for selection"
+                android:textSize="26dp" />
+
+            <CheckBox
+                android:id="@+id/checkbox_android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Android" />
+
+            <CheckBox
+                android:id="@+id/checkbox_ios"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="iOS" />
+
+            <CheckBox
+                android:id="@+id/checkbox_windows"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Windows" />
+
+            <CheckBox
+                android:id="@+id/checkbox_rim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RIM" />
+
+            <Button
+                android:id="@+id/btn_seeResultsCheckboxes"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:text="Click here to see Results"
+                app:cornerRadius="0dp" />
+
+            <TextView
+                android:id="@+id/tv_resultsCheckboxes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="List of Radio Buttons for selection"
+                android:textSize="26dp" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/radio_android"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Android" />
+
+                <RadioButton
+                    android:id="@+id/radio_ios"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="iOS" />
+
+                <RadioButton
+                    android:id="@+id/radio_windows"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Windows" />
+
+                <RadioButton
+                    android:id="@+id/radio_rim"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="RIM" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btn_seeResultsRadioButtons"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:text="Click here to see Results"
+                app:cornerRadius="0dp" />
+
+            <TextView
+                android:id="@+id/tv_resultsRadioButtons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="15dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

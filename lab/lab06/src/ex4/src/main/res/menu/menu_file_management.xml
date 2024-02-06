@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/create_new_folder"
+        android:icon="@drawable/create_new_folder_fill0_wght400_grad0_opsz24"
+        android:title="Create New Folder"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/add_new_file"
+        android:icon="@drawable/note_add_fill0_wght400_grad0_opsz24"
+        android:title="Add New File"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/remove_all"
+        android:title="Remove all" />
+    <item
+        android:id="@+id/remove_selected"
+        android:title="Remove selected" />
+</menu>

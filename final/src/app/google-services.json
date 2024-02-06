@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1062681773602",
+    "project_id": "metube-d952a",
+    "storage_bucket": "metube-d952a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1062681773602:android:5c6e9caf21dac7f0232c7b",
+        "android_client_info": {
+          "package_name": "com.example.metube"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqEJ4wIKn65zhxsV9FgJMdxexgoNCaFsM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
